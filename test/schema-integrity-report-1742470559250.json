@@ -1,0 +1,150 @@
+{
+  "testId": "schema-integrity-1742470557380",
+  "startTime": "2025-03-20T11:35:57.380Z",
+  "results": [
+    {
+      "testName": "Database Connection",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:57.834Z",
+      "uri": "mongodb+srv://rishiballabgarh23:123@mvp.z2uo0.mongodb.net/?retryWrites=true&w=majority&appName=MVP"
+    },
+    {
+      "testName": "Schema Warnings Check",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:58.839Z",
+      "warnings": []
+    },
+    {
+      "testName": "Create Test Users",
+      "status": "FAIL",
+      "timestamp": "2025-03-20T11:35:58.867Z",
+      "userResults": [
+        {
+          "status": "FAIL",
+          "email": "test-1742470557380@example.com",
+          "error": "",
+          "expected": true
+        },
+        {
+          "status": "FAIL",
+          "email": null,
+          "error": "",
+          "expected": false
+        },
+        {
+          "status": "FAIL",
+          "error": "",
+          "expected": false
+        },
+        {
+          "status": "FAIL",
+          "email": "",
+          "error": "",
+          "expected": false
+        },
+        {
+          "status": "FAIL",
+          "email": "test-1742470557380@example.com",
+          "error": "",
+          "expected": true
+        }
+      ]
+    },
+    {
+      "testName": "Connect Wallets",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:58.867Z",
+      "walletResults": []
+    },
+    {
+      "testName": "Check Wallet Status",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:58.868Z",
+      "statusResults": []
+    },
+    {
+      "testName": "Verify Users in DB",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:58.880Z",
+      "dbResults": []
+    },
+    {
+      "testName": "Verify Scores in DB",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:58.885Z",
+      "scoreResults": []
+    },
+    {
+      "testName": "Email Handling Tests",
+      "status": "FAIL",
+      "timestamp": "2025-03-20T11:35:59.158Z",
+      "emailResults": [
+        {
+          "testCase": "Find null emails",
+          "status": "PASS",
+          "count": 9,
+          "query": {
+            "email": null
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find undefined emails",
+          "status": "PASS",
+          "count": 8,
+          "query": {
+            "email": {
+              "$exists": false
+            }
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find empty emails",
+          "status": "FAIL",
+          "count": 0,
+          "query": {
+            "email": ""
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find duplicate emails",
+          "status": "FAIL",
+          "count": 0,
+          "query": {
+            "email": "test-1742470557380@example.com"
+          },
+          "expectation": "exact",
+          "expectedCount": 1
+        }
+      ]
+    },
+    {
+      "testName": "Direct Duplicate Email Test",
+      "status": "FAIL",
+      "timestamp": "2025-03-20T11:35:59.197Z",
+      "email": "test-1742470557380@example.com",
+      "error": "Duplicate email was not prevented by schema"
+    },
+    {
+      "testName": "Cleanup",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:35:59.249Z",
+      "deletedUsers": 0
+    }
+  ],
+  "dbWarnings": [],
+  "dbErrors": [],
+  "createdUsers": [],
+  "createdScores": [],
+  "endTime": "2025-03-20T11:35:59.249Z",
+  "executionTimeSec": 1.869,
+  "summary": {
+    "total": 10,
+    "passed": 7,
+    "failed": 3,
+    "warnings": 0,
+    "successRate": 70
+  }
+}

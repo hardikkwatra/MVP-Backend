@@ -1,0 +1,231 @@
+{
+  "testId": "backend-test-1742482739594",
+  "startTime": "2025-03-20T14:58:59.594Z",
+  "serverStartTime": null,
+  "serverStopTime": null,
+  "results": [
+    {
+      "name": "MongoDB Connection",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T14:58:59.984Z",
+      "message": "Connected to MongoDB",
+      "uri": "mongodb+srv://rishiballabgarh23:123@mvp.z2uo0.mongodb.net/?retryWrites=true&w=majority&appName=MVP"
+    },
+    {
+      "name": "User Email Index",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T14:59:00.042Z",
+      "message": "Found proper email index with partial filter expression"
+    },
+    {
+      "name": "Score Collection",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T14:59:00.070Z",
+      "message": "Score collection exists with indexes"
+    },
+    {
+      "name": "Database Schema",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T14:59:00.071Z",
+      "message": "Found 3 collections"
+    },
+    {
+      "name": "Start Server",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.771Z",
+      "message": "Failed to start server",
+      "error": "node:internal/modules/cjs/loader:1247\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\server.js'\r\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)\r\n    at Function._load (node:internal/modules/cjs/loader:1070:27)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  code: 'MODULE_NOT_FOUND',\r\n  requireStack: []\r\n}\r\n\r\nNode.js v22.13.0\r\n"
+    },
+    {
+      "name": "Create Test Users",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.772Z",
+      "message": "Failed to create test users",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Wallet Connect",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.774Z",
+      "message": "No test users available for wallet connect test"
+    },
+    {
+      "name": "Verify Wallet Status",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.774Z",
+      "message": "Failed to verify wallet status",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Check Score Records",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.775Z",
+      "message": "Failed to check score records",
+      "error": "Cannot find module './models/Score'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Email Uniqueness",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.776Z",
+      "message": "Failed to test email uniqueness",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Null Email Handling",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.777Z",
+      "message": "Error testing null email handling",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Cleanup",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.778Z",
+      "message": "Failed to clean up test data",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Stop Server",
+      "status": "INFO",
+      "timestamp": "2025-03-20T14:59:01.778Z",
+      "message": "Server was not started by this script, skipping stop"
+    }
+  ],
+  "errors": [
+    {
+      "name": "Start Server",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.771Z",
+      "message": "Failed to start server",
+      "error": "node:internal/modules/cjs/loader:1247\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\server.js'\r\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)\r\n    at Function._load (node:internal/modules/cjs/loader:1070:27)\r\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)\r\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)\r\n    at node:internal/main/run_main_module:36:49 {\r\n  code: 'MODULE_NOT_FOUND',\r\n  requireStack: []\r\n}\r\n\r\nNode.js v22.13.0\r\n"
+    },
+    {
+      "name": "Create Test Users",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.772Z",
+      "message": "Failed to create test users",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Wallet Connect",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.774Z",
+      "message": "No test users available for wallet connect test"
+    },
+    {
+      "name": "Verify Wallet Status",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.774Z",
+      "message": "Failed to verify wallet status",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Check Score Records",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.775Z",
+      "message": "Failed to check score records",
+      "error": "Cannot find module './models/Score'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Email Uniqueness",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.776Z",
+      "message": "Failed to test email uniqueness",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Null Email Handling",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.777Z",
+      "message": "Error testing null email handling",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    },
+    {
+      "name": "Cleanup",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T14:59:01.778Z",
+      "message": "Failed to clean up test data",
+      "error": "Cannot find module './models/User'\nRequire stack:\n- C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\test\\comprehensive-backend-test.js"
+    }
+  ],
+  "createdUsers": [],
+  "createdScores": [],
+  "databaseStats": {
+    "collections": [
+      "users",
+      "scores",
+      "wallets"
+    ],
+    "indexStats": {
+      "users": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "privyId": 1
+          },
+          "name": "privyId_1",
+          "background": true,
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "email": 1
+          },
+          "name": "email_unique_1742472186286",
+          "background": true,
+          "unique": true,
+          "partialFilterExpression": {
+            "email": {
+              "$type": "string"
+            }
+          }
+        }
+      ],
+      "scores": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "privyId": 1
+          },
+          "name": "privyId_1",
+          "background": true,
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "email": 1
+          },
+          "name": "email_1",
+          "background": true,
+          "unique": true,
+          "sparse": true
+        }
+      ]
+    }
+  },
+  "endTime": "2025-03-20T14:59:01.784Z",
+  "duration": 2.19,
+  "summary": {
+    "total": 13,
+    "success": 4,
+    "errors": 8,
+    "warnings": 0,
+    "successRate": 30.77
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "testId": "test-data-flow-1742470177159",
+  "timestamp": "2025-03-20T11:29:37.159Z",
+  "tests": [
+    {
+      "name": "Database Connection",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:38.857Z",
+      "data": null,
+      "error": null
+    },
+    {
+      "name": "API Health Check",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:38.879Z",
+      "data": "{\"status\":\"ok\",\"timestamp\":\"2025-03-20T11:29:38.874Z\"}",
+      "error": null
+    },
+    {
+      "name": "Direct User Creation",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.108Z",
+      "data": "{\"privyId\":\"test-data-flow-1742470177159\",\"username\":null,\"twitterConnected\":false,\"twitterVerified\":false,\"walletConnected\":false,\"walletAddress\":null,\"veridaConnected\":false,\"totalScore\":0,\"scoreDetails\":{\"twitterScore\":0,\"walletScore\":0,\"veridaScore\":0,\"twitterDetails\":{},\"walletDetails\":{},\"veridaDetails\":{}},\"_id\":\"67dbfc2396b78777b45cf846\",\"lastScoreUpdate\":\"2025-03-20T11:29:39.074Z\",\"createdAt\":\"2025-03-20T11:29:39.074Z\",\"updatedAt\":\"2025-03-20T11:29:39.077Z\"}",
+      "error": null
+    },
+    {
+      "name": "Wallet Connect API",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.244Z",
+      "data": "{\"success\":true,\"message\":\"Wallet connected successfully\",\"user\":{\"scoreDetails\":{\"twitterScore\":0,\"walletScore\":0,\"veridaScore\":0,\"twitterDetails\":{},\"walletDetails\":{},\"veridaDetails\":{}},\"_id\":\"67dbfc2396b78777b45cf846\",\"privyId\":\"test-data-flow-1742470177159\",\"username\":null,\"twitterConnected\":false,\"twitterVerified\":false,\"walletConnected\":true,\"walletAddress\":\"0xTest1742470177159\",\"veridaConnected\":false,\"totalScore\":0,\"lastScoreUpdate\":\"2025-03-20T11:29:39.074Z\",\"createdAt\":\"2025-03-20T11:29:39.074Z\",\"updatedAt\":\"2025-03-20T11:29:39.144Z\"},\"score\":{\"privyId\":\"test-data-flow-1742470177159\",\"username\":null,\"twitterScore\":0,\"telegramScore\":0,\"totalScore\":0,\"wallets\":[{\"walletAddress\":\"0xTest1742470177159\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc03f\"},{\"walletAddress\":\"0xTest1742470177159-wallet2\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc040\"},{\"walletAddress\":\"0xTest1742470177159-wallet3\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc041\"}],\"badges\":[],\"_id\":\"67dbfc232241707f0e3fc03e\",\"__v\":0}}",
+      "error": null
+    },
+    {
+      "name": "Wallet Status API",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.310Z",
+      "data": "{\"walletConnected\":true,\"walletAddress\":\"0xTest1742470177159\",\"wallets\":[{\"walletAddress\":\"0xTest1742470177159\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc03f\"},{\"walletAddress\":\"0xTest1742470177159-wallet2\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc040\"},{\"walletAddress\":\"0xTest1742470177159-wallet3\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc041\"}]}",
+      "error": null
+    },
+    {
+      "name": "Database User Verification",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.342Z",
+      "data": "{\"scoreDetails\":{\"twitterScore\":0,\"walletScore\":0,\"veridaScore\":0,\"twitterDetails\":{},\"walletDetails\":{},\"veridaDetails\":{}},\"_id\":\"67dbfc2396b78777b45cf846\",\"privyId\":\"test-data-flow-1742470177159\",\"username\":null,\"twitterConnected\":false,\"twitterVerified\":false,\"walletConnected\":true,\"walletAddress\":\"0xTest1742470177159\",\"veridaConnected\":false,\"totalScore\":0,\"lastScoreUpdate\":\"2025-03-20T11:29:39.074Z\",\"createdAt\":\"2025-03-20T11:29:39.074Z\",\"updatedAt\":\"2025-03-20T11:29:39.144Z\"}",
+      "error": null
+    },
+    {
+      "name": "Database Score Verification",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.375Z",
+      "data": "{\"_id\":\"67dbfc232241707f0e3fc03e\",\"privyId\":\"test-data-flow-1742470177159\",\"username\":null,\"twitterScore\":0,\"telegramScore\":0,\"totalScore\":0,\"wallets\":[{\"walletAddress\":\"0xTest1742470177159\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc03f\"},{\"walletAddress\":\"0xTest1742470177159-wallet2\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc040\"},{\"walletAddress\":\"0xTest1742470177159-wallet3\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc041\"}],\"badges\":[],\"__v\":0}",
+      "error": null
+    },
+    {
+      "name": "Score Calculation",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.513Z",
+      "data": "{\"success\":true,\"privyId\":\"test-data-flow-1742470177159\",\"title\":\"ALL ROUNDOOR\",\"badges\":{},\"scores\":{\"socialScore\":0,\"cryptoScore\":0,\"nftScore\":0,\"communityScore\":0,\"telegramScore\":0,\"totalScore\":0},\"walletCount\":3}",
+      "error": null
+    },
+    {
+      "name": "Get Total Score",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.548Z",
+      "data": "{\"totalScore\":0,\"twitterScore\":0,\"telegramScore\":0,\"walletScores\":[{\"walletAddress\":\"0xTest1742470177159\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc03f\"},{\"walletAddress\":\"0xTest1742470177159-wallet2\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc040\"},{\"walletAddress\":\"0xTest1742470177159-wallet3\",\"score\":0,\"_id\":\"67dbfc232241707f0e3fc041\"}],\"badges\":[]}",
+      "error": null
+    },
+    {
+      "name": "Score Consistency",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.549Z",
+      "data": "{\"apiScore\":0,\"dbScore\":0}",
+      "error": null
+    },
+    {
+      "name": "Data Flow Consistency",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.709Z",
+      "data": "{\"walletStatus\":true,\"walletAddress\":\"0xTest1742470177159\",\"walletCount\":3,\"totalScore\":0}",
+      "error": null
+    },
+    {
+      "name": "Test Data Cleanup",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:29:39.774Z",
+      "data": "{\"deletedUsers\":1,\"deletedScores\":1}",
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "executionTimeMs": 2616,
+    "executionTimeSec": "2.62"
+  }
+}

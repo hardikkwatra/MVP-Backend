@@ -1,0 +1,96 @@
+{
+  "tests": [
+    {
+      "name": "Backend Dependencies",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.521Z"
+    },
+    {
+      "name": "Frontend Dependencies",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.522Z"
+    },
+    {
+      "name": "Testing Dependencies",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.522Z"
+    },
+    {
+      "name": "Backend Routes Detected",
+      "status": "passed",
+      "details": "Found 21 routes",
+      "timestamp": "2025-03-20T12:56:28.532Z"
+    },
+    {
+      "name": "Frontend API Calls Detected",
+      "status": "passed",
+      "details": "Found 21 API calls",
+      "timestamp": "2025-03-20T12:56:28.532Z"
+    },
+    {
+      "name": "API Routes Alignment",
+      "status": "passed",
+      "details": "Both backend routes and frontend API calls detected",
+      "timestamp": "2025-03-20T12:56:28.532Z"
+    },
+    {
+      "name": "User Model",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.533Z"
+    },
+    {
+      "name": "Score Model",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.533Z"
+    },
+    {
+      "name": "Frontend User Type",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.540Z"
+    },
+    {
+      "name": "Frontend Score Type",
+      "status": "failed",
+      "details": "Score type/interface not found in frontend",
+      "timestamp": "2025-03-20T12:56:28.540Z"
+    },
+    {
+      "name": "Frontend Tests",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.541Z"
+    },
+    {
+      "name": "Backend Tests",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.542Z"
+    },
+    {
+      "name": "Cypress Configuration",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.542Z"
+    },
+    {
+      "name": "Test Setup",
+      "status": "passed",
+      "details": "",
+      "timestamp": "2025-03-20T12:56:28.543Z"
+    }
+  ],
+  "startTime": "2025-03-20T12:56:28.513Z",
+  "endTime": "2025-03-20T12:56:28.543Z",
+  "summary": {
+    "total": 14,
+    "passed": 13,
+    "failed": 1,
+    "successRate": "92.86%"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "testId": "backend-test-1742471341266",
+  "startTime": "2025-03-20T11:49:01.266Z",
+  "serverStartTime": null,
+  "serverStopTime": null,
+  "results": [
+    {
+      "name": "MongoDB Connection",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:49:31.294Z",
+      "message": "Failed to connect to MongoDB",
+      "error": "connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017"
+    }
+  ],
+  "errors": [
+    {
+      "name": "MongoDB Connection",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:49:31.294Z",
+      "message": "Failed to connect to MongoDB",
+      "error": "connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017"
+    }
+  ],
+  "createdUsers": [],
+  "createdScores": [],
+  "databaseStats": {
+    "collections": [],
+    "indexStats": {}
+  },
+  "endTime": "2025-03-20T11:49:31.318Z",
+  "duration": 30.052,
+  "summary": {
+    "total": 1,
+    "success": 0,
+    "errors": 1,
+    "warnings": 0,
+    "successRate": 0
+  }
+}

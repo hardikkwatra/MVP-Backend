@@ -1,0 +1,404 @@
+{
+  "testId": "backend-test-1742471626995",
+  "startTime": "2025-03-20T11:53:46.995Z",
+  "serverStartTime": null,
+  "serverStopTime": null,
+  "results": [
+    {
+      "name": "MongoDB Connection",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:47.385Z",
+      "message": "Connected to MongoDB",
+      "uri": "mongodb+srv://rishiballabgarh23:123@mvp.z2uo0.mongodb.net/?retryWrites=true&w=majority&appName=MVP"
+    },
+    {
+      "name": "User Email Index",
+      "status": "WARNING",
+      "timestamp": "2025-03-20T11:53:47.443Z",
+      "message": "Proper email index with partial filter expression not found"
+    },
+    {
+      "name": "Score Collection",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:47.469Z",
+      "message": "Score collection exists with indexes"
+    },
+    {
+      "name": "Database Schema",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:47.470Z",
+      "message": "Found 3 collections"
+    },
+    {
+      "name": "Start Server",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:48.309Z",
+      "message": "Failed to start server",
+      "error": "Command failed: Start-Process -NoNewWindow -FilePath \"node\" -ArgumentList \"server.js\" -PassThru\n'Start-Process' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+    },
+    {
+      "name": "Create Test Users",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:48.626Z",
+      "message": "Created 3 test users",
+      "results": [
+        {
+          "privyId": "test-user-1742471626995-1",
+          "status": "SUCCESS",
+          "email": "test-1742471626995@example.com"
+        },
+        {
+          "privyId": "test-user-1742471626995-2",
+          "status": "ERROR",
+          "email": null,
+          "error": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }"
+        },
+        {
+          "privyId": "test-user-1742471626995-3",
+          "status": "SUCCESS"
+        },
+        {
+          "privyId": "test-user-1742471626995-4",
+          "status": "SUCCESS",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "name": "Wallet Connect API",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:48.640Z",
+      "message": "Server not running or API endpoint not available",
+      "error": ""
+    },
+    {
+      "name": "Verify Wallet Status",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:48.724Z",
+      "message": "Verified wallet connection for 0 users",
+      "results": [
+        {
+          "privyId": "test-user-1742471626995-1",
+          "status": "ERROR",
+          "walletConnected": false,
+          "walletAddress": null
+        },
+        {
+          "privyId": "test-user-1742471626995-3",
+          "status": "ERROR",
+          "walletConnected": false,
+          "walletAddress": null
+        },
+        {
+          "privyId": "test-user-1742471626995-4",
+          "status": "ERROR",
+          "walletConnected": false,
+          "walletAddress": null
+        }
+      ]
+    },
+    {
+      "name": "Check Score Records",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:48.911Z",
+      "message": "Verified score records for 3 users",
+      "results": [
+        {
+          "privyId": "test-user-1742471626995-1",
+          "status": "SUCCESS",
+          "action": "created",
+          "scoreId": "67dc01cc40b178ff7d6a2765"
+        },
+        {
+          "privyId": "test-user-1742471626995-3",
+          "status": "SUCCESS",
+          "action": "created",
+          "scoreId": "67dc01cc40b178ff7d6a276c"
+        },
+        {
+          "privyId": "test-user-1742471626995-4",
+          "status": "SUCCESS",
+          "action": "created",
+          "scoreId": "67dc01cc40b178ff7d6a2770"
+        }
+      ]
+    },
+    {
+      "name": "Email Uniqueness",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:48.978Z",
+      "message": "Duplicate email correctly rejected",
+      "error": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"test-1742471626995@example.com\" }"
+    },
+    {
+      "name": "Null Email Handling",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:49.033Z",
+      "message": "Error testing null email handling",
+      "error": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }"
+    },
+    {
+      "name": "Cleanup",
+      "status": "SUCCESS",
+      "timestamp": "2025-03-20T11:53:49.090Z",
+      "message": "Deleted 3 users and 3 score records"
+    },
+    {
+      "name": "Stop Server",
+      "status": "INFO",
+      "timestamp": "2025-03-20T11:53:49.091Z",
+      "message": "Server was not started by this script, skipping stop"
+    }
+  ],
+  "errors": [
+    {
+      "name": "Start Server",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:48.309Z",
+      "message": "Failed to start server",
+      "error": "Command failed: Start-Process -NoNewWindow -FilePath \"node\" -ArgumentList \"server.js\" -PassThru\n'Start-Process' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+    },
+    {
+      "name": "Wallet Connect API",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:48.640Z",
+      "message": "Server not running or API endpoint not available",
+      "error": ""
+    },
+    {
+      "name": "Verify Wallet Status",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:48.724Z",
+      "message": "Verified wallet connection for 0 users",
+      "results": [
+        {
+          "privyId": "test-user-1742471626995-1",
+          "status": "ERROR",
+          "walletConnected": false,
+          "walletAddress": null
+        },
+        {
+          "privyId": "test-user-1742471626995-3",
+          "status": "ERROR",
+          "walletConnected": false,
+          "walletAddress": null
+        },
+        {
+          "privyId": "test-user-1742471626995-4",
+          "status": "ERROR",
+          "walletConnected": false,
+          "walletAddress": null
+        }
+      ]
+    },
+    {
+      "name": "Null Email Handling",
+      "status": "ERROR",
+      "timestamp": "2025-03-20T11:53:49.033Z",
+      "message": "Error testing null email handling",
+      "error": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }"
+    }
+  ],
+  "createdUsers": [
+    {
+      "privyId": "test-user-1742471626995-1",
+      "username": null,
+      "email": "test-1742471626995@example.com",
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": null,
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dc01cc40b178ff7d6a2757",
+      "lastScoreUpdate": "2025-03-20T11:53:48.326Z",
+      "createdAt": "2025-03-20T11:53:48.326Z",
+      "updatedAt": "2025-03-20T11:53:48.330Z"
+    },
+    {
+      "privyId": "test-user-1742471626995-3",
+      "username": null,
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": null,
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dc01cc40b178ff7d6a275d",
+      "lastScoreUpdate": "2025-03-20T11:53:48.569Z",
+      "createdAt": "2025-03-20T11:53:48.569Z",
+      "updatedAt": "2025-03-20T11:53:48.570Z"
+    },
+    {
+      "privyId": "test-user-1742471626995-4",
+      "username": null,
+      "email": "",
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": null,
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dc01cc40b178ff7d6a275f",
+      "lastScoreUpdate": "2025-03-20T11:53:48.599Z",
+      "createdAt": "2025-03-20T11:53:48.599Z",
+      "updatedAt": "2025-03-20T11:53:48.600Z"
+    }
+  ],
+  "createdScores": [
+    {
+      "privyId": "test-user-1742471626995-1",
+      "username": null,
+      "twitterScore": 0,
+      "telegramScore": 0,
+      "totalScore": 0,
+      "wallets": [
+        {
+          "walletAddress": "0x195b36700f31",
+          "score": 0,
+          "_id": "67dc01cc40b178ff7d6a2766"
+        },
+        {
+          "walletAddress": "0x195b36700f3extra",
+          "score": 0,
+          "_id": "67dc01cc40b178ff7d6a2767"
+        }
+      ],
+      "badges": [],
+      "_id": "67dc01cc40b178ff7d6a2765",
+      "__v": 0
+    },
+    {
+      "privyId": "test-user-1742471626995-3",
+      "username": null,
+      "twitterScore": 0,
+      "telegramScore": 0,
+      "totalScore": 0,
+      "wallets": [
+        {
+          "walletAddress": "0x195b36700f33",
+          "score": 0,
+          "_id": "67dc01cc40b178ff7d6a276d"
+        }
+      ],
+      "badges": [],
+      "_id": "67dc01cc40b178ff7d6a276c",
+      "__v": 0
+    },
+    {
+      "privyId": "test-user-1742471626995-4",
+      "username": null,
+      "twitterScore": 0,
+      "telegramScore": 0,
+      "totalScore": 0,
+      "wallets": [
+        {
+          "walletAddress": "0x195b36700f34",
+          "score": 0,
+          "_id": "67dc01cc40b178ff7d6a2771"
+        }
+      ],
+      "badges": [],
+      "_id": "67dc01cc40b178ff7d6a2770",
+      "__v": 0
+    }
+  ],
+  "databaseStats": {
+    "collections": [
+      "users",
+      "scores",
+      "wallets"
+    ],
+    "indexStats": {
+      "users": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "privyId": 1
+          },
+          "name": "privyId_1",
+          "background": true,
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "email": 1
+          },
+          "name": "email_1",
+          "background": true,
+          "unique": true,
+          "sparse": true
+        }
+      ],
+      "scores": [
+        {
+          "v": 2,
+          "key": {
+            "_id": 1
+          },
+          "name": "_id_"
+        },
+        {
+          "v": 2,
+          "key": {
+            "privyId": 1
+          },
+          "name": "privyId_1",
+          "background": true,
+          "unique": true
+        },
+        {
+          "v": 2,
+          "key": {
+            "email": 1
+          },
+          "name": "email_1",
+          "background": true,
+          "unique": true,
+          "sparse": true
+        }
+      ]
+    }
+  },
+  "endTime": "2025-03-20T11:53:49.096Z",
+  "duration": 2.101,
+  "summary": {
+    "total": 13,
+    "success": 7,
+    "errors": 4,
+    "warnings": 1,
+    "successRate": 53.85
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "testId": "schema-integrity-1742470683593",
+  "startTime": "2025-03-20T11:38:03.593Z",
+  "results": [
+    {
+      "testName": "Database Connection",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:03.984Z",
+      "uri": "mongodb+srv://rishiballabgarh23:123@mvp.z2uo0.mongodb.net/?retryWrites=true&w=majority&appName=MVP"
+    },
+    {
+      "testName": "Schema Warnings Check",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:04.990Z",
+      "warnings": []
+    },
+    {
+      "testName": "Create Test Users",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:05.319Z",
+      "userResults": [
+        {
+          "user": {
+            "privyId": "test-user-1742470683593-1",
+            "username": null,
+            "email": "test-1742470683593@example.com",
+            "twitterConnected": false,
+            "twitterVerified": false,
+            "walletConnected": false,
+            "walletAddress": "0x195b3589bc91",
+            "veridaConnected": false,
+            "totalScore": 0,
+            "scoreDetails": {
+              "twitterScore": 0,
+              "walletScore": 0,
+              "veridaScore": 0,
+              "twitterDetails": {},
+              "walletDetails": {},
+              "veridaDetails": {}
+            },
+            "_id": "67dbfe1d6afc0622bcce9c21",
+            "lastScoreUpdate": "2025-03-20T11:38:05.023Z",
+            "createdAt": "2025-03-20T11:38:05.023Z",
+            "updatedAt": "2025-03-20T11:38:05.029Z"
+          },
+          "status": "SUCCESS",
+          "email": "test-1742470683593@example.com"
+        },
+        {
+          "status": "FAIL",
+          "email": null,
+          "error": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }"
+        },
+        {
+          "user": {
+            "privyId": "test-user-1742470683593-3",
+            "username": null,
+            "twitterConnected": false,
+            "twitterVerified": false,
+            "walletConnected": false,
+            "walletAddress": "0x195b3589bc93",
+            "veridaConnected": false,
+            "totalScore": 0,
+            "scoreDetails": {
+              "twitterScore": 0,
+              "walletScore": 0,
+              "veridaScore": 0,
+              "twitterDetails": {},
+              "walletDetails": {},
+              "veridaDetails": {}
+            },
+            "_id": "67dbfe1d6afc0622bcce9c27",
+            "lastScoreUpdate": "2025-03-20T11:38:05.259Z",
+            "createdAt": "2025-03-20T11:38:05.259Z",
+            "updatedAt": "2025-03-20T11:38:05.259Z"
+          },
+          "status": "SUCCESS"
+        },
+        {
+          "user": {
+            "privyId": "test-user-1742470683593-4",
+            "username": null,
+            "email": "",
+            "twitterConnected": false,
+            "twitterVerified": false,
+            "walletConnected": false,
+            "walletAddress": "0x195b3589bc94",
+            "veridaConnected": false,
+            "totalScore": 0,
+            "scoreDetails": {
+              "twitterScore": 0,
+              "walletScore": 0,
+              "veridaScore": 0,
+              "twitterDetails": {},
+              "walletDetails": {},
+              "veridaDetails": {}
+            },
+            "_id": "67dbfe1d6afc0622bcce9c29",
+            "lastScoreUpdate": "2025-03-20T11:38:05.289Z",
+            "createdAt": "2025-03-20T11:38:05.289Z",
+            "updatedAt": "2025-03-20T11:38:05.289Z"
+          },
+          "status": "SUCCESS",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "testName": "Connect Wallets",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:05.418Z",
+      "walletResults": [
+        {
+          "privyId": "test-user-1742470683593-1",
+          "status": "SUCCESS",
+          "walletConnected": true
+        },
+        {
+          "privyId": "test-user-1742470683593-3",
+          "status": "SUCCESS",
+          "walletConnected": true
+        },
+        {
+          "privyId": "test-user-1742470683593-4",
+          "status": "SUCCESS",
+          "walletConnected": true
+        }
+      ]
+    },
+    {
+      "testName": "Check Wallet Status",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:05.509Z",
+      "statusResults": [
+        {
+          "privyId": "test-user-1742470683593-1",
+          "status": "SUCCESS",
+          "walletConnected": true,
+          "walletAddress": "0x195b3589bc91"
+        },
+        {
+          "privyId": "test-user-1742470683593-3",
+          "status": "SUCCESS",
+          "walletConnected": true,
+          "walletAddress": "0x195b3589bc93"
+        },
+        {
+          "privyId": "test-user-1742470683593-4",
+          "status": "SUCCESS",
+          "walletConnected": true,
+          "walletAddress": "0x195b3589bc94"
+        }
+      ]
+    },
+    {
+      "testName": "Verify Users in DB",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:05.593Z",
+      "dbResults": [
+        {
+          "privyId": "test-user-1742470683593-1",
+          "status": "SUCCESS",
+          "email": "test-1742470683593@example.com",
+          "walletConnected": true,
+          "walletAddress": "0x195b3589bc91"
+        },
+        {
+          "privyId": "test-user-1742470683593-3",
+          "status": "SUCCESS",
+          "walletConnected": true,
+          "walletAddress": "0x195b3589bc93"
+        },
+        {
+          "privyId": "test-user-1742470683593-4",
+          "status": "SUCCESS",
+          "email": "",
+          "walletConnected": true,
+          "walletAddress": "0x195b3589bc94"
+        }
+      ]
+    },
+    {
+      "testName": "Verify Scores in DB",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:05.863Z",
+      "scoreResults": [
+        {
+          "privyId": "test-user-1742470683593-1",
+          "status": "SUCCESS",
+          "modelType": "new-wallets-array",
+          "hasWallets": true
+        },
+        {
+          "privyId": "test-user-1742470683593-3",
+          "status": "SUCCESS",
+          "modelType": "new-wallets-array",
+          "hasWallets": true
+        },
+        {
+          "privyId": "test-user-1742470683593-4",
+          "status": "SUCCESS",
+          "modelType": "new-wallets-array",
+          "hasWallets": true
+        }
+      ]
+    },
+    {
+      "testName": "Email Handling Tests",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:05.971Z",
+      "emailResults": [
+        {
+          "testCase": "Find null emails",
+          "status": "PASS",
+          "count": 10,
+          "query": {
+            "email": null
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find undefined emails",
+          "status": "PASS",
+          "count": 9,
+          "query": {
+            "email": {
+              "$exists": false
+            }
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find empty emails",
+          "status": "PASS",
+          "count": 1,
+          "query": {
+            "email": ""
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find duplicate emails",
+          "status": "PASS",
+          "count": 1,
+          "query": {
+            "email": "test-1742470683593@example.com"
+          },
+          "expectation": "exact",
+          "expectedCount": 1
+        }
+      ]
+    },
+    {
+      "testName": "Direct Duplicate Email Test",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:06.024Z",
+      "email": "test-1742470683593@example.com",
+      "errorCode": 11000,
+      "errorMessage": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"test-1742470683593@example.com\" }",
+      "expected": "Should fail with 11000 error code"
+    },
+    {
+      "testName": "Cleanup",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:38:06.081Z",
+      "deletedUsers": 3
+    }
+  ],
+  "dbWarnings": [],
+  "dbErrors": [],
+  "createdUsers": [
+    {
+      "privyId": "test-user-1742470683593-1",
+      "username": null,
+      "email": "test-1742470683593@example.com",
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": "0x195b3589bc91",
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dbfe1d6afc0622bcce9c21",
+      "lastScoreUpdate": "2025-03-20T11:38:05.023Z",
+      "createdAt": "2025-03-20T11:38:05.023Z",
+      "updatedAt": "2025-03-20T11:38:05.029Z"
+    },
+    {
+      "privyId": "test-user-1742470683593-3",
+      "username": null,
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": "0x195b3589bc93",
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dbfe1d6afc0622bcce9c27",
+      "lastScoreUpdate": "2025-03-20T11:38:05.259Z",
+      "createdAt": "2025-03-20T11:38:05.259Z",
+      "updatedAt": "2025-03-20T11:38:05.259Z"
+    },
+    {
+      "privyId": "test-user-1742470683593-4",
+      "username": null,
+      "email": "",
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": "0x195b3589bc94",
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dbfe1d6afc0622bcce9c29",
+      "lastScoreUpdate": "2025-03-20T11:38:05.289Z",
+      "createdAt": "2025-03-20T11:38:05.289Z",
+      "updatedAt": "2025-03-20T11:38:05.289Z"
+    }
+  ],
+  "createdScores": [
+    {
+      "_id": "67dbfe1d6afc0622bcce9c35",
+      "privyId": "test-user-1742470683593-1",
+      "username": null,
+      "twitterScore": 0,
+      "telegramScore": 0,
+      "totalScore": 0,
+      "wallets": [
+        {
+          "walletAddress": "0x195b3589bc91",
+          "score": 0,
+          "_id": "67dbfe1d6afc0622bcce9c36"
+        }
+      ],
+      "badges": [],
+      "__v": 0
+    },
+    {
+      "_id": "67dbfe1d6afc0622bcce9c3b",
+      "privyId": "test-user-1742470683593-3",
+      "username": null,
+      "twitterScore": 0,
+      "telegramScore": 0,
+      "totalScore": 0,
+      "wallets": [
+        {
+          "walletAddress": "0x195b3589bc93",
+          "score": 0,
+          "_id": "67dbfe1d6afc0622bcce9c3c"
+        }
+      ],
+      "badges": [],
+      "__v": 0
+    },
+    {
+      "_id": "67dbfe1d6afc0622bcce9c3f",
+      "privyId": "test-user-1742470683593-4",
+      "username": null,
+      "twitterScore": 0,
+      "telegramScore": 0,
+      "totalScore": 0,
+      "wallets": [
+        {
+          "walletAddress": "0x195b3589bc94",
+          "score": 0,
+          "_id": "67dbfe1d6afc0622bcce9c40"
+        }
+      ],
+      "badges": [],
+      "__v": 0
+    }
+  ],
+  "endTime": "2025-03-20T11:38:06.082Z",
+  "executionTimeSec": 2.489,
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "warnings": 0,
+    "successRate": 100
+  }
+}

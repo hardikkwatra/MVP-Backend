@@ -1,0 +1,345 @@
+{
+  "testId": "schema-integrity-1742470621533",
+  "startTime": "2025-03-20T11:37:01.533Z",
+  "results": [
+    {
+      "testName": "Database Connection",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:01.918Z",
+      "uri": "mongodb+srv://rishiballabgarh23:123@mvp.z2uo0.mongodb.net/?retryWrites=true&w=majority&appName=MVP"
+    },
+    {
+      "testName": "Schema Warnings Check",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:02.926Z",
+      "warnings": []
+    },
+    {
+      "testName": "Create Test Users",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:03.246Z",
+      "userResults": [
+        {
+          "user": {
+            "privyId": "test-user-1742470621532-1",
+            "username": null,
+            "email": "test-1742470621533@example.com",
+            "twitterConnected": false,
+            "twitterVerified": false,
+            "walletConnected": false,
+            "walletAddress": "0x195b357a95c1",
+            "veridaConnected": false,
+            "totalScore": 0,
+            "scoreDetails": {
+              "twitterScore": 0,
+              "walletScore": 0,
+              "veridaScore": 0,
+              "twitterDetails": {},
+              "walletDetails": {},
+              "veridaDetails": {}
+            },
+            "_id": "67dbfdde4470a2ee86ff1281",
+            "lastScoreUpdate": "2025-03-20T11:37:02.958Z",
+            "createdAt": "2025-03-20T11:37:02.958Z",
+            "updatedAt": "2025-03-20T11:37:02.964Z"
+          },
+          "status": "SUCCESS",
+          "email": "test-1742470621533@example.com"
+        },
+        {
+          "status": "FAIL",
+          "email": null,
+          "error": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: null }"
+        },
+        {
+          "user": {
+            "privyId": "test-user-1742470621533-3",
+            "username": null,
+            "twitterConnected": false,
+            "twitterVerified": false,
+            "walletConnected": false,
+            "walletAddress": "0x195b357a95d3",
+            "veridaConnected": false,
+            "totalScore": 0,
+            "scoreDetails": {
+              "twitterScore": 0,
+              "walletScore": 0,
+              "veridaScore": 0,
+              "twitterDetails": {},
+              "walletDetails": {},
+              "veridaDetails": {}
+            },
+            "_id": "67dbfddf4470a2ee86ff1287",
+            "lastScoreUpdate": "2025-03-20T11:37:03.187Z",
+            "createdAt": "2025-03-20T11:37:03.187Z",
+            "updatedAt": "2025-03-20T11:37:03.187Z"
+          },
+          "status": "SUCCESS"
+        },
+        {
+          "user": {
+            "privyId": "test-user-1742470621533-4",
+            "username": null,
+            "email": "",
+            "twitterConnected": false,
+            "twitterVerified": false,
+            "walletConnected": false,
+            "walletAddress": "0x195b357a95d4",
+            "veridaConnected": false,
+            "totalScore": 0,
+            "scoreDetails": {
+              "twitterScore": 0,
+              "walletScore": 0,
+              "veridaScore": 0,
+              "twitterDetails": {},
+              "walletDetails": {},
+              "veridaDetails": {}
+            },
+            "_id": "67dbfddf4470a2ee86ff1289",
+            "lastScoreUpdate": "2025-03-20T11:37:03.217Z",
+            "createdAt": "2025-03-20T11:37:03.217Z",
+            "updatedAt": "2025-03-20T11:37:03.217Z"
+          },
+          "status": "SUCCESS",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "testName": "Connect Wallets",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:03.351Z",
+      "walletResults": [
+        {
+          "privyId": "test-user-1742470621532-1",
+          "status": "SUCCESS",
+          "walletConnected": true
+        },
+        {
+          "privyId": "test-user-1742470621533-3",
+          "status": "SUCCESS",
+          "walletConnected": true
+        },
+        {
+          "privyId": "test-user-1742470621533-4",
+          "status": "SUCCESS",
+          "walletConnected": true
+        }
+      ]
+    },
+    {
+      "testName": "Check Wallet Status",
+      "status": "FAIL",
+      "timestamp": "2025-03-20T11:37:03.361Z",
+      "statusResults": [
+        {
+          "privyId": "test-user-1742470621532-1",
+          "status": "FAIL",
+          "error": ""
+        },
+        {
+          "privyId": "test-user-1742470621533-3",
+          "status": "FAIL",
+          "error": ""
+        },
+        {
+          "privyId": "test-user-1742470621533-4",
+          "status": "FAIL",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "testName": "Verify Users in DB",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:03.444Z",
+      "dbResults": [
+        {
+          "privyId": "test-user-1742470621532-1",
+          "status": "SUCCESS",
+          "email": "test-1742470621533@example.com",
+          "walletConnected": true,
+          "walletAddress": "0x195b357a95c1"
+        },
+        {
+          "privyId": "test-user-1742470621533-3",
+          "status": "SUCCESS",
+          "walletConnected": true,
+          "walletAddress": "0x195b357a95d3"
+        },
+        {
+          "privyId": "test-user-1742470621533-4",
+          "status": "SUCCESS",
+          "email": "",
+          "walletConnected": true,
+          "walletAddress": "0x195b357a95d4"
+        }
+      ]
+    },
+    {
+      "testName": "Verify Scores in DB",
+      "status": "FAIL",
+      "timestamp": "2025-03-20T11:37:03.529Z",
+      "scoreResults": [
+        {
+          "privyId": "test-user-1742470621532-1",
+          "status": "FAIL",
+          "error": "Score record not found in database"
+        },
+        {
+          "privyId": "test-user-1742470621533-3",
+          "status": "FAIL",
+          "error": "Score record not found in database"
+        },
+        {
+          "privyId": "test-user-1742470621533-4",
+          "status": "FAIL",
+          "error": "Score record not found in database"
+        }
+      ]
+    },
+    {
+      "testName": "Email Handling Tests",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:03.638Z",
+      "emailResults": [
+        {
+          "testCase": "Find null emails",
+          "status": "PASS",
+          "count": 10,
+          "query": {
+            "email": null
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find undefined emails",
+          "status": "PASS",
+          "count": 9,
+          "query": {
+            "email": {
+              "$exists": false
+            }
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find empty emails",
+          "status": "PASS",
+          "count": 1,
+          "query": {
+            "email": ""
+          },
+          "expectation": "find"
+        },
+        {
+          "testCase": "Find duplicate emails",
+          "status": "PASS",
+          "count": 1,
+          "query": {
+            "email": "test-1742470621533@example.com"
+          },
+          "expectation": "exact",
+          "expectedCount": 1
+        }
+      ]
+    },
+    {
+      "testName": "Direct Duplicate Email Test",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:03.691Z",
+      "email": "test-1742470621533@example.com",
+      "errorCode": 11000,
+      "errorMessage": "E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \"test-1742470621533@example.com\" }",
+      "expected": "Should fail with 11000 error code"
+    },
+    {
+      "testName": "Cleanup",
+      "status": "PASS",
+      "timestamp": "2025-03-20T11:37:03.747Z",
+      "deletedUsers": 3
+    }
+  ],
+  "dbWarnings": [],
+  "dbErrors": [],
+  "createdUsers": [
+    {
+      "privyId": "test-user-1742470621532-1",
+      "username": null,
+      "email": "test-1742470621533@example.com",
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": "0x195b357a95c1",
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dbfdde4470a2ee86ff1281",
+      "lastScoreUpdate": "2025-03-20T11:37:02.958Z",
+      "createdAt": "2025-03-20T11:37:02.958Z",
+      "updatedAt": "2025-03-20T11:37:02.964Z"
+    },
+    {
+      "privyId": "test-user-1742470621533-3",
+      "username": null,
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": "0x195b357a95d3",
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dbfddf4470a2ee86ff1287",
+      "lastScoreUpdate": "2025-03-20T11:37:03.187Z",
+      "createdAt": "2025-03-20T11:37:03.187Z",
+      "updatedAt": "2025-03-20T11:37:03.187Z"
+    },
+    {
+      "privyId": "test-user-1742470621533-4",
+      "username": null,
+      "email": "",
+      "twitterConnected": false,
+      "twitterVerified": false,
+      "walletConnected": false,
+      "walletAddress": "0x195b357a95d4",
+      "veridaConnected": false,
+      "totalScore": 0,
+      "scoreDetails": {
+        "twitterScore": 0,
+        "walletScore": 0,
+        "veridaScore": 0,
+        "twitterDetails": {},
+        "walletDetails": {},
+        "veridaDetails": {}
+      },
+      "_id": "67dbfddf4470a2ee86ff1289",
+      "lastScoreUpdate": "2025-03-20T11:37:03.217Z",
+      "createdAt": "2025-03-20T11:37:03.217Z",
+      "updatedAt": "2025-03-20T11:37:03.217Z"
+    }
+  ],
+  "createdScores": [],
+  "endTime": "2025-03-20T11:37:03.747Z",
+  "executionTimeSec": 2.214,
+  "summary": {
+    "total": 10,
+    "passed": 8,
+    "failed": 2,
+    "warnings": 0,
+    "successRate": 80
+  }
+}

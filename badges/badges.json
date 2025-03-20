@@ -1,0 +1,23 @@
+[
+  {
+    "id": "badge_001",
+    "label": "Top Contributor",
+    "message": "Gold Tier",
+    "description": "Awarded for making the most contributions.",
+    "path": "C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\badges\\badge_001.svg"
+  },
+  {
+    "id": "badge_002",
+    "label": "Bug Hunter",
+    "message": "Elite",
+    "description": "Given for identifying and resolving critical bugs.",
+    "path": "C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\badges\\badge_002.svg"
+  },
+  {
+    "id": "badge_003",
+    "label": "Mentor",
+    "message": "Guide",
+    "description": "Recognized for mentoring new team members and providing guidance.",
+    "path": "C:\\Users\\SL177Y\\Pictures\\cluster-main-main\\Backend\\badges\\badge_003.svg"
+  }
+]
