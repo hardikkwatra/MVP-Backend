@@ -1,4 +1,4 @@
-const { fetchBlockchainData } = require("../services/moralisService");
+const { fetchBlockchainData } = require("../Services/moralisService.js");
 
 exports.getWalletDetails = async (address) => { // ✅ Accept `address` directly
     try {
